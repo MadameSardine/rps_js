@@ -14,7 +14,7 @@ $('a').each(function() {
 	var playerChoice = $(this).children();
 
 	var gestures = $('img').toArray();
-	var computerChoiceIndex = Math.floor(Math.random() * (gestures.length - 1));
+	var computerChoiceIndex = Math.floor(Math.random() * (gestures.length));
 	var computerChoiceProxy = gestures[computerChoiceIndex];
 	var computerChoice = $(computerChoiceProxy).toArray();
 	console.log(computerChoice);
